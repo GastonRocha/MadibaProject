@@ -1,118 +1,106 @@
-/* 
-    TODO list
-    background color
-    media queris
-*/
-
-
 *{
     padding: 0;
     margin: 0;
     list-style: none;
     font-size: 16px;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
-header{
+header {
     display: grid;
     justify-content: center;
-    padding: 0.1rem;
     color: #1f1f1f;
+    height: 30vh;
 }
 
-h1{
+ h1 {
+    justify-self: center;
     text-align: center;
     font-size: 2.4rem;
-    padding: 0.3rem;
     font-family: Roboto Slab, serif;
-    margin-bottom: 0.5rem;
-}
-
-hr{
-    background-color: #1f1f1f;
-}
-
-.hrWide{
-    
-    border: #1f1f1f solid 0.01rem;
-    
 }
 
 header section{
-    width: 75vw;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    align-items: center;
 }
 
-header p{
-    font-size: 1.5rem;
-    padding: 0.3rem;
-    font-family: Roboto Slab, serif;
-}
-
-#pL{
-    align-self: center;
-}
-
-#pC{
-    justify-self: center;
-    align-self: center;
-}
-
-#pR{
-    justify-self: end;
-    align-self: center;
-}
-
-.space{
-    justify-self: center;
-    align-self: center;
-    font-size: 2rem;
-    color: #1f1f1f;
-}
-
-#hrLast{
-    margin-bottom: 1rem;
-}
-
-main{
-    display: grid;
-    grid-area: "figure" "data";
-    justify-items: center;
-    background-color: #d4d4d4;
-    color: #1f1f1f;
-}
-
-figure{
-    padding: 1rem 0 2rem 0;
-}
-
-figure img{
-    -webkit-box-shadow: 0px 0px 17px 13px rgba(0,0,0,0.78); 
-    box-shadow: 0px 0px 17px 13px rgba(0,0,0,0.78);
-}
-
-figcaption{
+header section p {
+    font-size: 0.8rem;
     text-align: center;
-    margin-top: 1.3rem;
     font-family: Roboto Slab, serif;
 }
 
-main article{
+ hr {
+    background-color: #1f1f1f;
+}
+
+.hrWide {
+    border: #1f1f1f solid 0px;
+}
+
+.hrThin {
+    border: #1f1f1f solid 0px;
+}
+
+.space {
+    justify-self: center;
+    align-self: center;
+    font-size: 1rem;
+    color: #1f1f1f;
+} 
+
+main .mainFig {
+    height: 71vh;
+} 
+
+main .mainFig img {
+    align-self: center;
+    padding: 0px;
+    margin-top: 20%;
+    -webkit-box-shadow: 0px 0px 17px 13px rgba(119, 119, 119, 0.78); 
+    box-shadow: 0px 0px 17px 13px rgba(119, 119, 119, 0.78);
+    width: 100%;
+}
+
+main .mainFig figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: Roboto Slab, serif;
+}
+
+main article {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    background-color: rgba(240, 240, 240, 0.8);
+    color: #141414;
+    font-family: roboto, sans-serif;
 }
 
 ul li{
-    padding: 0.6rem;
-    font-family: roboto, sans-serif;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    padding: 0.8rem;
+    line-height: 1.5rem;
 }
 
-hr{
-    margin: 0.2rem
+.figUlL, .figUlR{
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    width: 100%;
 }
+
+.figUlL img, .figUlR img {
+    width: 40vw;
+}
+
+
+.figUlR img {
+    width: 30rem;
+}
+
+
+
+/*
 
 footer{
     color: #d4d4d4;
@@ -132,4 +120,4 @@ footer p{
     align-self: center;
     font-family: roboto;
     font-size: 1.6rem;
-}
+} */
