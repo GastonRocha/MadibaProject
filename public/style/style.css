@@ -6,118 +6,95 @@
     text-decoration: none;
 }
 
-header {
-    display: grid;
-    justify-content: center;
-    color: #1f1f1f;
-    height: 30vh;
+body {
+    background-color: #F8F5F1;
 }
 
- h1 {
+header {
+    height: 100vh;
+}
+
+header  h1 {
+    word-spacing: 1rem;
+    color: #364053;
+    height: 45%;
+    background-image: url(../src/imgs/mandelaPresident.jpg);
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+	position: relative;
+	overflow: hidden;
+    border-radius: 0 0 85% 85% / 20%;
     justify-self: center;
     text-align: center;
     font-size: 2.4rem;
     font-family: Roboto Slab, serif;
+    text-shadow: 2px 1px 5px #333;
+    filter: grayscale(30%);
 }
 
-header section{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
+
+header section {
+    height: 55%;
+    display: flex;
 }
 
 header section p {
-    font-size: 0.8rem;
     text-align: center;
-    font-family: Roboto Slab, serif;
-}
-
- hr {
-    background-color: #1f1f1f;
-}
-
-.hrWide {
-    border: #1f1f1f solid 0px;
-}
-
-.hrThin {
-    border: #1f1f1f solid 0px;
-}
-
-.space {
-    justify-self: center;
-    align-self: center;
-    font-size: 1rem;
-    color: #1f1f1f;
-} 
-
-main .mainFig {
-    height: 71vh;
-} 
-
-main .mainFig img {
-    align-self: center;
-    padding: 0px;
-    margin-top: 20%;
-    -webkit-box-shadow: 0px 0px 17px 13px rgba(119, 119, 119, 0.78); 
-    box-shadow: 0px 0px 17px 13px rgba(119, 119, 119, 0.78);
-    width: 100%;
-}
-
-main .mainFig figcaption {
-    text-align: center;
-    font-size: 0.8rem;
-    font-family: Roboto Slab, serif;
+    margin: auto;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    color: #45526C;
+    
 }
 
 main article {
     display: grid;
-    background-color: rgba(240, 240, 240, 0.8);
-    color: #141414;
+    color: #45526C;
     font-family: roboto, sans-serif;
 }
 
-ul li{
+ul li {
     padding: 0.8rem;
     line-height: 1.5rem;
 }
 
-.figUlL, .figUlR{
-    position: absolute;
-    display: flex;
-    z-index: -1;
-    width: 100%;
-}
-
-.figUlL img, .figUlR img {
-    width: 40vw;
-}
-
-
-.figUlR img {
-    width: 30rem;
-}
-
-
-
-/*
-
-footer{
-    color: #d4d4d4;
+footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: #1f1f1f;
+    grid-area: 1/1/3/4;
+    background: #45526C;
 }
 
-footer ul{
+footer section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template: 1fr 1fr / 1fr 1fr;
+
 }
 
-footer p{
-    margin-right: 1rem;
-    text-align: end;
+footer p {
+    text-align: center;
     align-self: center;
     font-family: roboto;
-    font-size: 1.6rem;
-} */
+    font-size: 1rem;
+    color: #5AA897;
+    font-weight: bold;
+    padding: 0.8rem;
+}
+
+footer a {
+    text-align: center;
+    font-family: roboto;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color:#5AA897;
+}
+
+i {
+    padding: 1rem;
+    color: #F8F5F1;
+    
+}
+
+
+
+
