@@ -10,59 +10,55 @@ body {
     background-color: #F8F5F1;
 }
 
-header {
-    height: 100vh;
+ header {
+    width: 100vw;
 }
 
 header  h1 {
     word-spacing: 1rem;
     color: #364053;
-    height: 45%;
-    background-image: url(../src/imgs/mandelaPresident.jpg);
+    z-index: 1;
     text-align: center;
     width: 100%;
     background-size: cover;
-	position: relative;
+    position: absolute;
 	overflow: hidden;
-    border-radius: 0 0 85% 85% / 20%;
-    justify-self: center;
-    text-align: center;
     font-size: 2.4rem;
     font-family: Roboto Slab, serif;
     text-shadow: 2px 1px 5px #333;
+}
+
+header figure img {
+    z-index: -1;
     filter: grayscale(30%);
-}
-
-
-header section {
-    height: 55%;
-    display: flex;
-}
-
-header section p {
-    text-align: center;
-    margin: auto;
-    font-size: 1.4rem;
-    line-height: 2.5rem;
-    color: #45526C;
+    width: 100vw;
     
+    border-radius: 0 0 85% 85% / 20%;
+}
+
+header p {
+    display: grid;
+    height: 55vh;
+    text-align: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #45526C;
 }
 
 main article {
-    display: grid;
     color: #45526C;
     font-family: roboto, sans-serif;
+    height: 100%;
 }
 
-ul li {
+section p {
     padding: 0.8rem;
     line-height: 1.5rem;
 }
 
 footer {
-    display: grid;
-    grid-area: 1/1/3/4;
     background: #45526C;
+    height: 25vh;
 }
 
 footer section {
@@ -95,6 +91,37 @@ i {
     
 }
 
+ @media (min-width: 1024px) {
 
+    header h1, header figure, header p {
+        width: 1800x;
+    }
 
+    main {
+        display: grid;
+        justify-content: center;
+        width: 100vw;
+    }
 
+    main article {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    
+    footer section {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    footer section a {
+        padding: 1rem;
+    }
+ }
+
+ /* @media (min-width: 1260px) {
+    img {
+        width: 1260px;
+     }
+ } */
