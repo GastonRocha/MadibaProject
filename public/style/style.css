@@ -1,3 +1,6 @@
+/* footer background: #45526C;*/
+
+
 *{
     padding: 0;
     margin: 0;
@@ -7,47 +10,41 @@
 }
 
 body {
-    background-color: #F8F5F1;
+    max-width: 1600px;
+    margin: auto;
 }
 
- header {
-    width: 100vw;
-}
-
-header  h1 {
+header h1 {
+    background-image: url(../src/imgs/nelsonMandela.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
     word-spacing: 1rem;
     color: #364053;
-    z-index: 1;
     text-align: center;
-    width: 100%;
-    background-size: cover;
-    position: absolute;
-	overflow: hidden;
     font-size: 2.4rem;
     font-family: Roboto Slab, serif;
     text-shadow: 2px 1px 5px #333;
+    border-radius: 0 0 85% 85% / 20%;
+    filter: grayscale(30%);
 }
 
-header figure img {
-    z-index: -1;
-    filter: grayscale(30%);
-    width: 100vw;
-    
-    border-radius: 0 0 85% 85% / 20%;
-}
 
 header p {
     display: grid;
-    height: 55vh;
+    height: 60vh;
     text-align: center;
     align-items: center;
     font-size: 1.4rem;
     color: #45526C;
 }
 
-main article {
+main {
     color: #45526C;
     font-family: roboto, sans-serif;
+}
+
+main section {
     height: 100%;
 }
 
@@ -56,25 +53,25 @@ section p {
     line-height: 1.5rem;
 }
 
-footer {
+ footer {
     background: #45526C;
     height: 25vh;
-}
+    border-radius:  10px 10px 0 0;
+} 
 
-footer section {
+ footer section {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
-
 }
 
 footer p {
     text-align: center;
-    align-self: center;
     font-family: roboto;
     font-size: 1rem;
     color: #5AA897;
     font-weight: bold;
     padding: 0.8rem;
+    margin-top: 2%;
 }
 
 footer a {
@@ -83,7 +80,7 @@ footer a {
     font-size: 0.8rem;
     font-weight: bold;
     color:#5AA897;
-}
+} 
 
 i {
     padding: 1rem;
@@ -91,28 +88,23 @@ i {
     
 }
 
- @media (min-width: 1024px) {
+@media (min-width: 1024px) {
 
     header h1, header figure, header p {
         width: 1800x;
     }
 
     main {
-        display: grid;
-        justify-content: center;
-        width: 100vw;
-    }
-
-    main article {
         display: flex;
-        justify-content: center;
-        margin-bottom: 3rem;
     }
     
+    main article {
+        height: 100%;
+    }
+
     footer section {
         display: flex;
         justify-content: center;
-        width: 100vw;
     }
 
     footer section a {
@@ -120,8 +112,9 @@ i {
     }
  }
 
- /* @media (min-width: 1260px) {
-    img {
-        width: 1260px;
-     }
- } */
+@media (min-width: 1260px) {
+    
+    main article{
+        display: flex;
+    }    
+}
