@@ -42,6 +42,7 @@ header p {
 main {
     color: #45526C;
     font-family: roboto, sans-serif;
+    margin-bottom: 10rem;
 }
 
 main section {
@@ -53,9 +54,9 @@ section p {
     line-height: 1.5rem;
 }
 
- footer {
+footer {
+    display: grid;
     background: #45526C;
-    height: 25vh;
     border-radius:  10px 10px 0 0;
 } 
 
@@ -122,4 +123,8 @@ i {
     main article{
         display: flex;
     }    
+
+    footer{
+        height: 20vh;
+    }
 }
